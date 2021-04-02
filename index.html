@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <link href="src/index.js" rel="stylesheet" type="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="alert alert-info" role="alert">
+        Weather was updated 2 minutes ago <a href="#" class="alert-link">Refresh</a>.
+      </div>
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+            <input
+            type="search"
+            placeholder="Search a location"
+            autofocus="on"
+            autocomplete="off"
+            class="form-control shadow-sm" 
+            id="city-search"
+            />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-primary shadow-sm">Search 📍</button>
+          </div>
+          </div>
+        </form>      
+      <h1 id="search-for-city">
+        <div>
+        Chicago, IL
+        </div>
+      </h1>
+      <h2>
+        <ul>
+          <li class="currentTime" id="time-display">
+            Tuesday 10:00
+          </li>
+          <li id="weatherDescription"><b>
+            Sunny</b>
+          </li>
+        </ul>
+      </h2>
+
+      <div class="divTable">
+        <div class="divTableBody">
+          <div class="divTableCell">
+          <img src="https://i.ibb.co/PZDp8Sf/Asset-7.png" class="icon-1" alt="sunny" >
+        </div>
+
+        <div class="divTableCell">
+          <h3>
+            <p>
+              <span class="temperature" id="temperature">40°</span><span class="units"></span></p>
+          <a href="#" id="fahrenheit-link">°F</a> | 
+          <a href="#" id="celsius-link">°C</a>
+          </span>
+          </h3>
+          <h4>
+                <ul class = "weatherInfo">
+                  <li>Precipitation: <span id="precipitation">10</span>%</li>
+                <li> Humidity:  <span id="humidity">40</span>%</li>
+              <li>Wind:  <span id="wind">8 </span>mph </li>
+              </ul>
+          </h4>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="icon-1">
+
+      </div>
+      <div class="card border-light mb-3" style="max-width: 8em;">
+        <img src="https://i.ibb.co/37DZFWs/cloudy.png" alt="cloudy" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Tues</h5>
+          <p class="card-text">48° | 29°</p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 8em; float: center;">
+        <img src="https://i.ibb.co/Hr7m9jY/sunny.png" alt="sunny" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Wed</h5>
+          <p class="card-text">48° | 29°</p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 8em;">
+        <img src="https://i.ibb.co/xjG22W3/partlysunny.png" alt="partlysunny" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Thur</h5>
+          <p class="card-text">48° | 29°</p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 8em;">
+        <img src="https://i.ibb.co/xjG22W3/partlysunny.png" alt="partlysunny" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Fri</h5>
+          <p class="card-text">48° | 29°</p>
+        </div>
+      </div>
+      <div class="card border-light mb-3" style="max-width: 8em;">
+        <img src="https://i.ibb.co/B4z18Zp/rainy.png" alt="rainy" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Sat</h5>
+          <p class="card-text">48° | 29°</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer">
+      This page was built by
+      <a href="https://mollyerrek.com/" target="_blank">
+        Molly Errek
+      </a>
+    </p>
+    </div>
+  </div>
+  </body>
+</html>
