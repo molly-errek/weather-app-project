@@ -16,7 +16,7 @@ function formatDate(timestamp) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
@@ -107,7 +107,7 @@ function search(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
+  let cityInputElement = document.querySelector("#city-search");
   search(cityInputElement.value);
 }
 
@@ -118,7 +118,6 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
-
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -126,7 +125,5 @@ form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-
 
 search("Chicago");
