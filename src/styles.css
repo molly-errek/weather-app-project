@@ -3,7 +3,7 @@ body {
   padding: 0px;
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   width: 100%;
-  height: 220%; 
+  height: 220%;
 }
 
 html {
@@ -13,11 +13,11 @@ html {
 
 h1 {
   font-weight: 900;
-font-size: 30px;
-height: 28px;
-color: #3f51b5;
-text-align: center;
-padding: 5px;
+  font-size: 30px;
+  height: 28px;
+  color: #3f51b5;
+  text-align: center;
+  padding: 5px;
 }
 
 ul {
@@ -45,7 +45,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.container{
+.container {
   display: block;
   padding: 10px;
 }
